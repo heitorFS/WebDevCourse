@@ -1,0 +1,36 @@
+.def-grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 50%) );
+}
+
+.grid-img-container img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.grid-text {
+    font-size: 14pt;
+    width: 90%;
+    margin: auto 5%;
+}
+
+@media only screen and (max-width: 999px) {
+    .grid-text {
+        width: 80%;
+        margin: 1vw 5%;
+    }
+
+    .def-grid {
+        overflow: hidden;
+        grid-template-columns: repeat( auto-fit, minmax(500px, 100%) );
+    }
+
+    .grid-img-container {
+        width: 100%;
+    }
+
+    .grid-img-container img {
+        width: 80%;
+        margin: 0 5%;
+    }
+}

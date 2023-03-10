@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+    background-color: #CBE4DE;
+}
+
+.title-container {
+    display: flex;
+    margin: 3vh 0 1vh 5vw;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+}
+
+.vl {
+    border-left: 1px solid currentColor;
+}
+
+.section:nth-child(even) {
+    background-color: #2E4F4F !important;
+    color: #FFF !important;
+}
+
+.section {
+    padding: 5vh 0;
+}
