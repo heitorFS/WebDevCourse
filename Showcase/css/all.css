@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../resources/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../resources/Roboto-Medium.ttf') format('truetype');
+    font-weight: 400;
+}
 
 body {
     margin: 0;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Roboto';
+    font-size: 16pt;
+    font-weight: 300;
     background-color: #CBE4DE;
 }
 
 .title-container {
     display: flex;
-    margin: 3vh 0 1vh 5vw;
+    margin: 3vh 0 5vh 5vw;
 }
 
 .title {
