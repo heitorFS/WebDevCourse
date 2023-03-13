@@ -1,0 +1,37 @@
+footer {
+    background-color: #2C3333;
+    color: #FFF;
+    display: flex;
+
+    padding: 50px;
+    justify-content: center;
+}
+
+.footer-logo {
+    width: 175px;
+}
+
+.footer-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+    h2 {
+        font-size: 14pt;
+    }
+
+    .footer-text {
+        font-size: 12pt;
+    }
+
+    .logo{
+        width: 100px;
+    }
+}
