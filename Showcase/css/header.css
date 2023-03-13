@@ -1,0 +1,96 @@
+header {
+    background-color: #2C3333;
+    color: #FFF;
+    height: 200px;
+}
+
+header a {
+    float: left;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18pt;
+    line-height: 30px;
+    transition: 150ms;
+}
+
+header a:hover {
+    background-color: #626871;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px;
+    margin: auto 3vw;
+}
+
+.buttons {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 2vw;
+}
+
+.menu-button {
+    display: none;
+    padding: 10px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: #2C3333;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    background-color: #525e5e;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        align-items: center;
+        height: 100px;
+        display: flex;
+    }
+
+    .header-content {        
+        height: 0;
+    }
+
+    .content-container {        
+        transform: none;
+    }
+
+    .logo {
+        width:100px;
+    }
+
+    .header a {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .buttons {        
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: -15px;
+
+        background-color: #222831;
+        float: none;
+        display: grid;
+        height: auto;
+    }
+
+    .menu-button {
+        display: flex;
+        position: absolute;
+        right: 3vw;
+    }
+
+    .header-vl {
+        display: none;
+    }
+}
