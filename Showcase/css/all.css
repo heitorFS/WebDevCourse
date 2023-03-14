@@ -46,6 +46,7 @@ body {
 .def-grid {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(500px, 50%) );
+    grid-row-gap: 20vh;
 }
 
 .grid-img-container img {
@@ -63,6 +64,38 @@ body {
     font-weight: 400;
     color: #FFF;
     text-decoration: none;
+}
+
+.code-container {
+    background-color: #393b3b;
+    color: #FFF;
+    border: solid 1px #AAA;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 3vh;
+
+    max-height: 500px;
+    overflow: auto;
+}
+
+code > .tag-name {
+    color: rgb(209, 68, 68)
+}
+
+code > .comment {
+    color: rgb(80, 139, 80)
+}
+
+code > .attr-name {
+    color: rgb(160, 226, 85);
+}
+
+code > .attr-value {
+    color: rgb(226, 214, 108);
+}
+
+li {
+    margin: 3vh 0;
 }
 
 @media only screen and (max-width: 999px) {
