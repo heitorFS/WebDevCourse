@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Web - WebDev</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/all.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="https://kit.fontawesome.com/68d5670c68.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/web.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="resources/logo.svg" />
+            <div class="buttons">
+                <a href="web.html"><div class="button" id="web-function">Web</div></a>
+                <div class="vl header-vl" style="height:50%;margin:1vw"></div>
+                <a href="web-history.html"><div class="button" id="web-history">Web History</div></a>
+                <div class="vl header-vl" style="height:50%;margin:1vw"></div>
+                <a href="html5.html"><div class="button" id="html5">HTML 5</div></a>           
+            </div>
+
+            <span class="menu-button"><i class="fa-solid fa-bars"></i></span>
+        </header>
+        <main>
+            <div class="section">
+                <div class="title-container">
+                    <div class="title">CSS Básico</div>
+                    <div class="vl" style="margin-left:2vw"></div>
+                </div>
+                <div class="def-grid">
+                    <div class="grid-img-container">
+                        <img src="resources/CodeOutputs/CSS/001-Basic.png" />
+                    </div>
+                    <div class="grid-text">
+                        Este é o funcionamento de propriedades no CSS:
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">&#60;!-- index.html --&#62;</span><br />
+                                &#60;!<span class="tag-name">DOCTYPE</span> html&#62;<br />
+                                &#60;<span class="tag-name">html</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">title</span>&#62;Meu primeiro website&#60;/<span class="tag-name">title</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">link</span> <span class="attr-name">rel</span>=<span class="attr-value">"stylesheet"</span> <span class="attr-name">type</span>=<span class="attr-value">"text/css"</span> <span class="attr-name">href</span>=<span class="attr-value">"style.css"</span> /&#62;<br />
+                                &emsp;&#60;/<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">body</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">button</span> <span class="attr-name">class</span>=<span class="attr-value">"btn btn-primary"</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">header</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">nav</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">ul</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;Home&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;&#60;<span class="tag-name">a</span> <span class="attr-name">href</span>=<span class="attr-value">"about.html"</span>&#62;About&#60;/<span class="tag-name">a</span>&#62;&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;&#60;<span class="tag-name">a</span> <span class="attr-name">href</span>=<span class="attr-value">"login.html"</span>&#62;Login&#60;/<span class="tag-name">a</span>&#62;&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&#60;/<span class="tag-name">ul</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;/<span class="tag-name">nav</span>&#62;<br />
+                                &emsp;&emsp;&#60;/<span class="tag-name">header</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">section</span>&#62;<br />   
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">h2</span>&#62;Home&#60;/<span class="tag-name">h2</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">p</span>&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#60;/<span class="tag-name">p</span>&#62;<br />                       
+                                &emsp;&emsp;&#60;/<span class="tag-name">section</span>&#62;<br />  
+                                &emsp;&#60;/<span class="tag-name">body</span>&#62;<br />
+                                &#60;/<span class="tag-name">html</span>&#62;
+                            </code>
+                        </div>
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">/* styles.css */</span><br />
+                                <span class="tag-name">h2</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">red</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">pink</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">black</span>;<br />
+                                }
+
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="grid-img-container">
+                        <img src="resources/CodeOutputs/CSS/002-Basic.png" />
+                    </div>
+                    <div class="grid-text">
+                        Background e estilos mais complexos
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">&#60;!-- index.html --&#62;</span><br />
+                                &#60;!<span class="tag-name">DOCTYPE</span> html&#62;<br />
+                                &#60;<span class="tag-name">html</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">title</span>&#62;Meu primeiro website&#60;/<span class="tag-name">title</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">link</span> <span class="attr-name">rel</span>=<span class="attr-value">"stylesheet"</span> <span class="attr-name">type</span>=<span class="attr-value">"text/css"</span> <span class="attr-name">href</span>=<span class="attr-value">"style.css"</span> /&#62;<br />
+                                &emsp;&#60;/<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">body</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">button</span> <span class="attr-name">class</span>=<span class="attr-value">"btn btn-primary"</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">header</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">nav</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">ul</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;Home&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;&#60;<span class="tag-name">a</span> <span class="attr-name">href</span>=<span class="attr-value">"about.html"</span>&#62;About&#60;/<span class="tag-name">a</span>&#62;&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&emsp;&#60;<span class="tag-name">li</span>&#62;&#60;<span class="tag-name">a</span> <span class="attr-name">href</span>=<span class="attr-value">"login.html"</span>&#62;Login&#60;/<span class="tag-name">a</span>&#62;&#60;/<span class="tag-name">li</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&emsp;&#60;/<span class="tag-name">ul</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;/<span class="tag-name">nav</span>&#62;<br />
+                                &emsp;&emsp;&#60;/<span class="tag-name">header</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">section</span>&#62;<br />   
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">h2</span>&#62;Home&#60;/<span class="tag-name">h2</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">p</span>&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#60;/<span class="tag-name">p</span>&#62;<br />                       
+                                &emsp;&emsp;&#60;/<span class="tag-name">section</span>&#62;<br />  
+                                &emsp;&#60;/<span class="tag-name">body</span>&#62;<br />
+                                &#60;/<span class="tag-name">html</span>&#62;
+                            </code>
+                        </div>
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">/* styles.css */</span><br />
+                                <span class="tag-name">body</span> {<br />
+                                &emsp;<span class="css-props">background-image</span>: <span class="css-props">url</span>(<span class="attr-value">https://images.unsplash.com/photo-1678140159724-8f10121dc864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80</span>);<br />
+                                &emsp;<span class="css-props">background-size</span>: <span class="css-props">cover</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">h2</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-number">#AA4139</span>;<br />
+                                &emsp;<span class="css-props">text-align</span>: <span class="css-props">center</span>;<br />
+                                &emsp;<span class="css-props">border</span>: <span class="css-number">5</span><span class="tag-name">px</span> <span class="css-props">solid rgba</span>(<span class="css-number">255</span>, <span class="css-number">176</span>, <span class="css-number">170</span>, <span class="css-number">.5</span>);<br />
+                                &emsp;<span class="css-props">cursor</span>: <span class="css-props">pointer</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">pink</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">green</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">li</span> {<br />
+                                &emsp;<span class="css-props">list-style</span>: <span class="css-props">none</span>;<br />
+                                &emsp;<span class="css-props">display</span>: <span class="css-props">inline-block</span>;<br />
+                                }
+
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="grid-img-container">
+                        <img src="resources/CodeOutputs/CSS/003-Basic.png" />
+                    </div>
+                    <div class="grid-text">                        
+                        Não se esqueça da propriedade float!
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">&#60;!-- about.html --&#62;</span><br />
+                                &#60;!<span class="tag-name">DOCTYPE</span> html&#62;<br />
+                                &#60;<span class="tag-name">html</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">title</span>&#62;Meu primeiro website&#60;/<span class="tag-name">title</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">link</span> <span class="attr-name">rel</span>=<span class="attr-value">"stylesheet"</span> <span class="attr-name">type</span>=<span class="attr-value">"text/css"</span> <span class="attr-name">href</span>=<span class="attr-value">"style.css"</span> /&#62;<br />
+                                &emsp;&#60;/<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">body</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">section</span>&#62;<br />   
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">h2</span>&#62;About&#60;/<span class="tag-name">h2</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://i.natgeofe.com/n/2a58b782-8872-44e6-96da-81a48dee635a/GettyImages-180723850.jpg?w=636&h=454"</span> <span class="attr-name">width</span>=<span class="attr-value">"180"</span> <span class="attr-name">height</span>=<span class="attr-value">"120"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">p</span>&#62;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&#60;/<span class="tag-name">p</span>&#62;<br />                       
+                                &emsp;&emsp;&#60;/<span class="tag-name">section</span>&#62;<br />  
+                                &emsp;&#60;/<span class="tag-name">body</span>&#62;<br />
+                                &#60;/<span class="tag-name">html</span>&#62;
+                            </code>
+                        </div>
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">/* styles.css */</span><br />
+                                <span class="tag-name">body</span> {<br />
+                                &emsp;<span class="css-props">background-image</span>: <span class="css-props">url</span>(<span class="attr-value">https://images.unsplash.com/photo-1678140159724-8f10121dc864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80</span>);<br />
+                                &emsp;<span class="css-props">background-size</span>: <span class="css-props">cover</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-number">#AA4139</span>;<br />
+                                &emsp;<span class="css-props">text-align</span>: <span class="css-props">center</span>;<br />
+                                &emsp;<span class="css-props">border</span>: <span class="css-number">5</span><span class="tag-name">px</span> <span class="css-props">solid rgba</span>(<span class="css-number">255</span>, <span class="css-number">176</span>, <span class="css-number">170</span>, <span class="css-number">.5</span>);<br />
+                                &emsp;<span class="css-props">cursor</span>: <span class="css-props">pointer</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">img</span> {<br />
+                                &emsp;<span class="css-props">float</span>: <span class="css-props">left</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">pink</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">p</span> {<br />
+                                &emsp;<span class="css-props">color</span>: <span class="css-props">white</span>;<br />
+                                &emsp;<span class="css-props">line-height</span>: <span class="css-number">30</span><span class="tag-name">px</span>;<br />
+                                &emsp;<span class="css-props">font-size</span>: <span class="css-number">18</span><span class="tag-name">pt</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">li</span> {<br />
+                                &emsp;<span class="css-props">list-style</span>: <span class="css-props">none</span>;<br />
+                                &emsp;<span class="css-props">display</span>: <span class="css-props">inline-block</span>;<br />
+                                }
+
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="title-container">
+                    <div class="title">CSS Avançado</div>
+                    <div class="vl" style="margin-left:2vw"></div>
+                </div>                
+                <div class="def-grid">
+                    <div class="grid-img-container">
+                        <img src="resources/CodeOutputs/CSS/001-Advanced.png" />
+                    </div>
+                    <div class="grid-text">                        
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">&#60;!-- index2.html --&#62;</span><br />
+                                &#60;!<span class="tag-name">DOCTYPE</span> html&#62;<br />
+                                &#60;<span class="tag-name">html</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">title</span>&#62;CSS&#60;/<span class="tag-name">title</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">link</span> <span class="attr-name">rel</span>=<span class="attr-value">"stylesheet"</span> <span class="attr-name">type</span>=<span class="attr-value">"text/css"</span> <span class="attr-name">href</span>=<span class="attr-value">"style.css"</span> /&#62;<br />
+                                &emsp;&#60;/<span class="tag-name">head</span>&#62;<br />
+                                &emsp;&#60;<span class="tag-name">body</span>&#62;<br />
+                                &emsp;&emsp;&#60;<span class="tag-name">div</span> <span class="attr-name">class</span>=<span class="attr-value">"container"</span>&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&emsp;&#60;<span class="tag-name">img</span> <span class="attr-name">src</span>=<span class="attr-value">"https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg"</span> /&#62;<br />
+                                &emsp;&emsp;&#60;/<span class="tag-name">div</span>&#62;<br />  
+                                &emsp;&#60;/<span class="tag-name">body</span>&#62;<br />
+                                &#60;/<span class="tag-name">html</span>&#62;
+                            </code>
+                        </div>
+                        <div class="code-container">
+                            <code>
+                                <span class="comment">/* style.css */</span><br />
+                                <span class="attr-name">.container</span> {<br />
+                                &emsp;<span class="css-props">display</span>: <span class="css-props">flex</span>;<br />
+                                &emsp;<span class="css-props">flex-wrap</span>: <span class="css-props">wrap</span>;<br />
+                                &emsp;<span class="css-props">justify-content</span>: <span class="css-props">center</span>;<br />
+                                }<br /><br />
+                                <span class="tag-name">img</span> {<br />
+                                &emsp;<span class="css-props">width</span>: <span class="css-number">450</span><span class="tag-name">px</span>;<br />
+                                &emsp;<span class="css-props">height</span>: <span class="css-number">300</span><span class="tag-name">px</span>;<br />
+                                }
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>        
+        <footer>
+            <img class="footer-logo" src="resources/logo.svg" />
+            <div class="vl"></div>
+            <div class="footer-text">
+                <h2>Desenvolvido por Heitor Freitas</h2>
+                <span>Com o objetivo de auxiliar nos estudos</span>
+            </div>
+        </footer>
+    </body>
+</html>

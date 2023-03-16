@@ -78,8 +78,27 @@ body {
     overflow: auto;
 }
 
+.code-container::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    padding-right: 1vh;
+}
+
+.code-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.code-container::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 243, 225);
+    border-radius: 10px;
+}
+
+.code-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(212, 212, 187);
+}
+
 code > .tag-name {
-    color: rgb(209, 68, 68)
+    color: rgb(238, 63, 107)
 }
 
 code > .comment {
@@ -92,6 +111,14 @@ code > .attr-name {
 
 code > .attr-value {
     color: rgb(226, 214, 108);
+}
+
+code > .css-props {
+    color: rgb(105, 206, 247)
+}
+
+code > .css-number {
+    color: rgb(195, 93, 241);
 }
 
 li {
