@@ -2,15 +2,16 @@
 
 <html>
     <head>
+        <title>Web - WebDev</title>
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/all.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="js/header.js"></script>
         <script src="https://kit.fontawesome.com/68d5670c68.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/web.css">
     </head>
-
     <body>
         <header>
             <img class="logo" src="resources/logo.svg" />
@@ -23,14 +24,32 @@
                 <div class="vl header-vl" style="height:50%;margin:1vw"></div>
                 <a href="css.html"><div class="button" id="html5">CSS</div></a>           
                 <div class="vl header-vl" style="height:50%;margin:1vw"></div>
-                <a href="ajax.html"><div class="button" id="html5">AJAX</div></a>                     
+                <a href="ajax.html"><div class="button" id="html5">AJAX</div></a>                   
             </div>
 
             <span class="menu-button"><i class="fa-solid fa-bars"></i></span>
         </header>
-        <main style="height:1000px">
-
-        </main>
+        <main>
+            <div class="section">
+                <div class="title-container">
+                    <div class="title">Fetch</div>
+                    <div class="vl" style="margin-left:2vw"></div>
+                </div>
+                <div class="def-grid">
+                    <div class="grid-text">
+                        Uso do comando fetch:
+                        <div class="code-container">
+                            <code>
+                                <span class="attr-name">fetch</span></span>(<span class="attr-value">'api'</span>)<br />
+                                &emsp;.<span class="attr-name">then</span>((<span class="tag-name">response</span>) => <span class="tag-name">response</span>.<span class="attr-name">json</span>())<br />
+                                &emsp;.<span class="attr-name">then</span>((<span class="tag-name">data</span>) => <span class="attr-name">console</span>.<span class="attr-name">log(</span><span class="tag-name">data</span>))<br />
+                                &emsp;.<span class="attr-name">catch</span>((<span class="tag-name">err</span>) => <span class="attr-name">console</span>.<span class="attr-name">log(</span><span class="tag-name">err</span>))
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>        
         <footer>
             <img class="footer-logo" src="resources/logo.svg" />
             <div class="vl"></div>
